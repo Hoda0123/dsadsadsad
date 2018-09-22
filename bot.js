@@ -218,7 +218,7 @@ function play(guild, song) {
 }//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 
 client.on('message', message => {
-    var prefix = "H";
+    var prefix = "&";
     
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
