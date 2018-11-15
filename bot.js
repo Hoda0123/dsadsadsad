@@ -279,5 +279,12 @@ ${prefix}queue ? لمعرفة قآئمة التشغيل
     
    }
    }); 
-   
+   client.on('ready', () => {
+    setInterval(function(){
+        client.guilds.get('468811298000601088').roles.find('name', 'DISCO').edit({color: 'RANDOM'})
+    },5000);
+  
+
+})
+
 client.login(process.env.BOT_TOKEN);
